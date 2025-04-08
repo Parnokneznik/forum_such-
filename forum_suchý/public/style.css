@@ -4,6 +4,7 @@
     --text-color: #333;
     --border-color: #ddd;
     --success-color: #4caf50;
+    --reply-color: #f9f9f9;
 }
 
 body {
@@ -169,6 +170,7 @@ button:hover {
     background-color: var(--secondary-color);
     border-radius: 4px;
     margin-bottom: 10px;
+    position: relative;
 }
 
 .comment-meta {
@@ -195,4 +197,45 @@ button:hover {
 .add-comment-btn {
     font-size: 14px;
     padding: 5px 10px;
+}
+
+.reply-section {
+    margin-top: 10px;
+    padding-left: 20px;
+    border-left: 2px solid var(--primary-color);
+}
+
+.reply-form {
+    margin-top: 10px;
+    display: none;
+}
+
+.reply {
+    background-color: var(--reply-color);
+    margin-top: 8px;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid var(--border-color);
+}
+
+.reply-meta {
+    font-size: 10px;
+    color: #666;
+    margin-bottom: 3px;
+}
+
+.reply-content {
+    font-size: 13px;
+    white-space: pre-wrap;
+}
+
+.reply-btn {
+    background: none;
+    border: none;
+    color: var(--primary-color);
+    text-decoration: underline;
+    cursor: pointer;
+    padding: 0;
+    font-size: 12px;
+    margin-top: 5px;
 }
